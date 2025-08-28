@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Service</title>
+    <link rel="shortcut icon" href="./assets/logo-dark.png" type="image/x-icon">
+
+    <!-- Daisy UI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="flex md:flex-row flex-col gap-4 py-3 w-11/12 mx-auto items-center justify-between">
+            <div id="logo" class="flex items-center gap-2">
+                <img class="w-[50px]" src="./assets/logo.png" alt="">
+                <div>
+                    <p style='font-family: "Hind Madurai", sans-serif;' class="text-[#006747] font-bold text-xl/6">
+                        Emergency
+                    </p>
+                    <p style='font-family: "Hind Madurai", sans-serif;' class="text-[#006747] font-bold text-xl/6">
+                        Service
+                    </p>
+                </div>
+            </div>
+            <div>
+                <button
+                    class="btn text-[14px] bg-[rgba(65,255,107,10%)] border-0 px-6 font-bold rounded-3xl mr-3 md:mr-0"><span
+                        id="heart-number">0</span>
+                    <img class="w-[24px]" src="./assets/heart.png" alt="">
+                </button>
+
+                <button
+                    class="btn text-[14px] bg-[rgba(65,255,107,10%)] border-0 px-6 font-bold rounded-3xl md:ml-3"><span
+                        id="call-balance-coin">100</span>
+                    <img class="w-[24px]" src="./assets/coin.png" alt="">
+                </button>
+
+                <button
+                    class="btn text-[14px] text-white bg-[#00A63E] border-0 px-6 font-semibold rounded-3xl ml-3"><span
+                        id="copy-demo">0</span>
+                    Copy</button>
+            </div>
+        </nav>
+    </header>
+</body>
