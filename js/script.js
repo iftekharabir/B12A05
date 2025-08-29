@@ -49,3 +49,23 @@ function callButton(btnId, title, number) {
 for (let i = 1; i <= 9; i++) {
   callButton(`callBtn-${i}`, `subtitle-${i}`, `phone-number-${i}`);
 }
+
+// This function shows the call history
+function callHistory(clickedId) {
+  const callHistoryContainer = document.getElementById('call-history-container');
+  callHistoryContainer.innerText = '';
+
+  for (const data of callHistoryData) {
+    const div = document.createElement('div');
+    div.innerHTML = `
+      <div class="p-3 mt-3 bg-[#FAFAFA] rounded-md flex items-center justify-between">
+        <div>
+          <h3 class="font-semibold">${data.title}</h3>
+          <p>${data.number}</p>
+        </div>
+        <p class="text-sm">${data.date}</p>
+      </div>
+    `;
+    callHistoryContainer.appendChild(div);
+  }
+}
