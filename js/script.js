@@ -77,3 +77,22 @@ document.getElementById('clear-button')
     callHistoryContainer.innerHTML = '';
     callHistoryData.length = 0;
   })
+
+
+// Copy Button Functionality
+const copyBtns = document.getElementsByClassName('copy-btn');
+const arrayCopyBtns = Array.from(copyBtns);
+
+for (const copyBtn of copyBtns) {
+  copyBtn.addEventListener('click', function () {
+    let copyDemo = parseInt(document.getElementById('copy-demo').innerText);
+    copyDemo++;
+    document.getElementById('copy-demo').innerText = copyDemo;
+
+
+    let copyBtnIndex = arrayCopyBtns.indexOf(copyBtn) + 1;
+    const phoneNumber = getNumber(`phone-number-${copyBtnIndex}`);
+    navigator.clipboard.writeText(phoneNumber);
+    alert(`Number Copied - ` + phoneNumber);
+  })
+}
