@@ -14,3 +14,9 @@ function getSubtitle(title) {
   const subTitle = document.getElementById(title).innerText;
   return subTitle;
 }
+
+// getting number function
+function getNumber(number) {
+  const phoneNumber = document.getElementById(number).innerText;
+  return phoneNumber;
+}
