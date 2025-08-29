@@ -15,7 +15,7 @@ function getSubtitle(title) {
   return subTitle;
 }
 
-// getting number function
+// Getting number function
 function getNumber(number) {
   const phoneNumber = document.getElementById(number).innerText;
   return phoneNumber;
@@ -69,3 +69,11 @@ function callHistory(clickedId) {
     callHistoryContainer.appendChild(div);
   }
 }
+
+// This function clears the call history when the clear button is clicked
+document.getElementById('clear-button')
+  .addEventListener('click', function () {
+    const callHistoryContainer = document.getElementById('call-history-container');
+    callHistoryContainer.innerHTML = '';
+    callHistoryData.length = 0;
+  })
