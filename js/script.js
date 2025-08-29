@@ -8,3 +8,9 @@ for (const heartBtn of heartButtons) {
     document.getElementById('heart-number').innerText = heartNumberDemo;
   })
 }
+
+// Utility function to retrieve the subtitle text from an element by its ID
+function getSubtitle(title) {
+  const subTitle = document.getElementById(title).innerText;
+  return subTitle;
+}
